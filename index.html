@@ -7,30 +7,128 @@
 
 <body>
 
-    <!-- Preloader -->
+    <!-- Animated Preloader -->
     <div id="preloader">
-    <img src="images/preloader.gif" alt="Loading...">
-    <p>Loading Gallery...</p>
-</div>
-
-    <h1 id="typewriter"></h1>
-
-    <div class="gallery">
-        <img src="images/img1.jpg" alt="Image 1">
-        <img src="images/img2.jpg" alt="Image 2">
-        <img src="images/img3.jpg" alt="Image 3">
-        <img src="images/img4.jpg" alt="Image 4">
-        <img src="images/img5.jpg" alt="Image 5">
-        <img src="images/img6.jpg" alt="Image 6">
-        <img src="images/img7.jpg" alt="Image 7">
-        <img src="images/img8.jpg" alt="Image 8">
+        <img src="images/preloader.gif" alt="Loading...">
+        <p>Loading Gallery...</p>
     </div>
+
+
+    <!-- Background Decorations -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+
+
+    <!-- Header -->
+    <header>
+        <h1 id="typewriter"></h1>
+    </header>
+
+
+    <!-- Gallery -->
+    <main class="gallery">
+
+        <div class="gallery-item">
+            <img src="images/img1.jpg" alt="Image 1">
+            <div class="image-info">
+                <span>01</span>
+                <h3>Dreamscape</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img2.jpg" alt="Image 2">
+            <div class="image-info">
+                <span>02</span>
+                <h3>Nature</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img3.jpg" alt="Image 3">
+            <div class="image-info">
+                <span>03</span>
+                <h3>Adventure</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img4.jpg" alt="Image 4">
+            <div class="image-info">
+                <span>04</span>
+                <h3>Moments</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img5.jpg" alt="Image 5">
+            <div class="image-info">
+                <span>05</span>
+                <h3>Colours</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img6.jpg" alt="Image 6">
+            <div class="image-info">
+                <span>06</span>
+                <h3>Memories</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img7.jpg" alt="Image 7">
+            <div class="image-info">
+                <span>07</span>
+                <h3>Creative</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/img8.jpg" alt="Image 8">
+            <div class="image-info">
+                <span>08</span>
+                <h3>Inspiration</h3>
+            </div>
+        </div>
+
+    </main>
+
 
     <!-- Lightbox -->
     <div id="lightbox">
-        <span id="close">&times;</span>
-        <img id="lightbox-img">
+
+        <button id="close">&times;</button>
+
+        <button id="prev" class="navigation">&#10094;</button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-img" src="" alt="Selected Image">
+
+            <div class="lightbox-bottom">
+
+                <div>
+                    <span id="image-number">1 / 8</span>
+                    <h2 id="image-title">Dreamscape</h2>
+                </div>
+
+                <button id="likeBtn">♡</button>
+
+            </div>
+
+        </div>
+
+        <button id="next" class="navigation">&#10095;</button>
+
     </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © Evara</p>
+    </footer>
+
 
     <script src="script.js"></script>
 
